@@ -54,15 +54,16 @@ export default function Login(){
     }
 
     function registra() {
-    if(mail == undefined || user == undefined || contra == undefined){
-        return alert("Error", "Faltan datos")
+        if(mail == "" || user == "" || contra == ""){
+            return alert("Error", "Faltan datos")
+        }
+        let datos = {
+            mail: mail,
+            user: user,
+            password: contra
+        }
+        registrar(datos)
     }
-    let datos = {
-        mail: mail,
-        user: user,
-        password: contra
-    }
-    registrar(datos)}
 
     return(
         <>

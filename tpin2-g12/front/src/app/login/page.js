@@ -52,7 +52,7 @@ export default function Login(){
     }
 
     function loguea() {
-    if(user == undefined || contra == undefined){
+    if(user == "" || contra == ""){
         return alert("Error, faltan datos")
     }
     let datos = {

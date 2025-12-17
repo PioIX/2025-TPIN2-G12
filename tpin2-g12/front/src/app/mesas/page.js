@@ -14,7 +14,7 @@ export default function Mesas(){
     const [ID_Mesa, setID_Mesa] = useState("");
     const [mailOwner, setMailOwner] = useState("");
     const [limite, setLimite] = useState(0);
-    const [mostrarModal, setMostrarModal] = useState(false);
+    const [showModal, setShowModal] = useState(false);
     
     /*useEffect(()=>{
       traerMesas()
